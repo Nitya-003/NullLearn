@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"tertiary":"#ffffff","error":"#ffb4ab","secondary-fixed":"#e3e2e2","on-tertiary":"#303031","surface-container-low":"#1c1b1b","primary":"#ffffff","error-container":"#93000a","inverse-surface":"#e5e2e1","on-surface-variant":"#c4c7c8","on-tertiary-fixed-variant":"#464747","surface":"#131313","surface-variant":"#353534","surface-container-highest":"#353534","on-primary-fixed":"#1a1c1c","tertiary-container":"#e4e2e2","on-background":"#e5e2e1","on-primary-fixed-variant":"#454747","on-primary-container":"#636565","inverse-primary":"#5d5f5f","on-secondary":"#2f3131","on-secondary-container":"#b5b5b5","surface-bright":"#3a3939","on-secondary-fixed":"#1a1c1c","secondary-container":"#464747","outline":"#8e9192","surface-dim":"#131313","surface-container-lowest":"#0e0e0e","primary-fixed":"#e2e2e2","outline-variant":"#444748","on-tertiary-container":"#646464","surface-tint":"#c6c6c7","tertiary-fixed-dim":"#c7c6c6","primary-container":"#e2e2e2","on-tertiary-fixed":"#1b1c1c","surface-container-high":"#2a2a2a","tertiary-fixed":"#e4e2e2","surface-container":"#201f1f","on-error":"#690005","secondary-fixed-dim":"#c7c6c6","on-secondary-fixed-variant":"#464747","primary-fixed-dim":"#c6c6c7","inverse-on-surface":"#313030","on-primary":"#2f3131","on-surface":"#e5e2e1","secondary":"#c7c6c6","on-error-container":"#ffdad6","background":"#131313"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"margin":"1rem","gutter":"1rem","margin-desktop":"2rem","space-lg":"1.25rem","space-xl":"2rem","space-xs":"0.25rem","gutter-desktop":"1.5rem","space-md":"0.75rem","space-sm":"0.5rem"},fontFamily:{"display":["Inter"],"body-md":["Inter"],"body-lg":["Inter"],"headline-md":["Inter"],"mono-sm":["JetBrains Mono"],"mono-md":["JetBrains Mono"],"body-sm":["Inter"],"label-caps":["Inter"],"headline-sm":["Inter"],"headline-lg":["Inter"],"mono-lg":["JetBrains Mono"]},fontSize:{"display":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-md":["13px",{"lineHeight":"20px","letterSpacing":"0","fontWeight":"400"}],"body-lg":["15px",{"lineHeight":"24px","letterSpacing":"0","fontWeight":"400"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"mono-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"400"}],"mono-md":["12px",{"lineHeight":"18px","letterSpacing":"0","fontWeight":"400"}],"body-sm":["12px",{"lineHeight":"18px","letterSpacing":"0","fontWeight":"400"}],"label-caps":["11px",{"lineHeight":"16px","letterSpacing":"0.06em","fontWeight":"600"}],"headline-sm":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"600"}],"mono-lg":["14px",{"lineHeight":"20px","letterSpacing":"-0.01em","fontWeight":"500"}]}}}}</script></head><body class="bg-surface-container-lowest font-body-md text-on-surface antialiased selection:bg-surface-container-highest selection:text-primary"><aside class="fixed left-0 top-0 h-full w-60 bg-surface-container-lowest border-r border-outline-variant/30 z-50 flex flex-col justify-between select-none"><div class="flex flex-col"><div class="h-16 px-space-lg flex items-center gap-space-sm border-b border-outline-variant/30"><div class="w-8 h-8 rounded-DEFAULT bg-surface-container-high border border-outline-variant/40 flex items-center justify-center"><span class="material-symbols-outlined text-primary text-[18px]">terminal</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-none">NullLearn</span><span class="font-mono-sm text-[10px] text-on-surface-variant tracking-wider uppercase mt-0.5">ML UNLEARNING AUDIT</span></div></div><div class="px-space-md py-space-sm"><span class="px-space-sm py-1 font-label-caps text-label-caps text-outline uppercase tracking-wider block">Terminal Protocol</span></div><nav class="flex flex-col px-space-sm gap-0.5" data-active-classes="bg-surface-container-high text-primary border-l-2 border-primary"><a class="flex items-center gap-space-sm px-space-md py-2 rounded-DEFAULT font-body-md text-body-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="overview" href="#"><span class="material-symbols-outlined text-[18px]">dashboard</span><span>Overview</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-DEFAULT font-body-md text-body-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="models-datasets" href="#"><span class="material-symbols-outlined text-[18px]">layers</span><span>Models &amp; Datasets</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-DEFAULT font-body-md text-body-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="unlearning-requests" href="#"><span class="material-symbols-outlined text-[18px]">playlist_remove</span><span>Unlearning Requests</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-2 rounded-DEFAULT font-body-md transition-colors bg-surface-container-high text-primary border-l-2 border-primary" data-path="verification-lab" href="#"><span class="material-symbols-outlined text-[18px]">memory</span><span>Verification Lab</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-DEFAULT font-body-md text-body-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="blockchain-ledger" href="#"><span class="material-symbols-outlined text-[18px]">link</span><span>Blockchain Ledger</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-DEFAULT font-body-md text-body-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="audit-reports" href="#"><span class="material-symbols-outlined text-[18px]">verified</span><span>Audit Reports</span></a><a class="flex items-center gap-space-sm px-space-md py-2 rounded-DEFAULT font-body-md text-body-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[18px]">tune</span><span>Settings</span></a></nav></div><div class="p-space-md border-t border-outline-variant/30 flex flex-col gap-space-sm bg-surface-container-lowest"><div class="px-space-sm py-1.5 rounded-DEFAULT bg-surface-container border border-outline-variant/20 flex items-center justify-between"><div class="flex items-center gap-1.5 min-w-0"><span class="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0"></span><span class="font-mono-sm text-mono-sm text-on-surface truncate">Devnet (31337)</span></div><span class="font-mono-sm text-[10px] text-outline px-1 bg-surface-container-high rounded-DEFAULT">SYNC</span></div><div class="flex items-center gap-space-sm px-space-sm py-1"><div class="w-8 h-8 rounded-DEFAULT bg-surface-container-high border border-outline-variant/40 flex items-center justify-center font-mono-sm text-mono-sm text-primary font-bold">AU</div><div class="flex flex-col min-w-0 flex-1"><span class="font-body-sm text-body-sm text-on-surface font-medium truncate">Auditor Console</span><span class="font-mono-sm text-[10px] text-on-surface-variant truncate">#NL-8821</span></div><span class="material-symbols-outlined text-outline text-[16px]">lock</span></div></div></aside><div class="pl-60 min-h-screen flex flex-col bg-surface-container-lowest"><header class="fixed top-0 left-60 right-0 h-16 bg-surface-container-lowest/95 backdrop-blur-md border-b border-outline-variant/30 z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-xs font-mono-sm text-mono-sm text-on-surface-variant"><span class="text-outline">NullLearn</span><span class="text-outline-variant">/</span><span class="text-primary font-medium">Terminal Environment</span></div><div class="hidden xl:flex items-center gap-space-sm px-space-md py-1 rounded-DEFAULT bg-surface-container border border-outline-variant/30 text-on-surface-variant hover:border-outline transition-colors cursor-pointer"><span class="material-symbols-outlined text-[16px] text-outline">terminal</span><span class="font-mono-sm text-mono-sm text-outline">Search proof, model, tx hash...</span><kbd class="font-mono-sm text-[10px] bg-surface-container-high text-on-surface px-1.5 py-0.5 rounded-DEFAULT border border-outline-variant/40">⌘K</kbd></div></div><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center gap-2 px-space-sm py-1 rounded-DEFAULT bg-surface-container-high border border-outline-variant/30"><span class="w-1.5 h-1.5 rounded-full bg-outline"></span><span class="font-mono-sm text-[11px] text-on-surface tracking-wide uppercase font-medium">Demo Testnet</span></div><div class="hidden lg:flex items-center gap-1.5 font-mono-sm text-mono-sm text-on-surface-variant px-space-sm py-1 bg-surface-container rounded-DEFAULT border border-outline-variant/20"><span class="text-outline">RPC</span><span class="text-on-surface">127.0.0.1:8545</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 w-full flex-1 max-w-[1440px] mx-auto px-space-xl py-space-lg"><div class="flex flex-col w-full gap-space-lg select-none">
+<div class="flex flex-col xl:flex-row xl:items-center justify-between gap-space-md pb-space-md border-b border-outline-variant/30">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center justify-center w-5 h-5 rounded-DEFAULT bg-primary text-surface-container-lowest">
+<span class="material-symbols-outlined text-[14px]">tune</span>
+</span>
+<h1 class="font-headline-lg text-headline-lg text-primary tracking-tight">Verification Lab</h1>
+<span class="px-space-xs py-0.5 rounded-DEFAULT bg-surface-container-high border border-outline-variant/40 font-mono-sm text-[10px] text-outline uppercase tracking-wider">v3.2.0-STOCH</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Evaluate post-unlearning weight behavior against a retrained reference baseline.
+      </p>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="relative">
+<button class="flex items-center gap-space-sm px-space-md py-1.5 rounded-DEFAULT bg-surface-container border border-outline-variant/40 text-on-surface hover:border-outline transition-colors text-left" id="modelSelectTrigger">
+<span class="material-symbols-outlined text-[16px] text-outline">dataset</span>
+<div class="flex flex-col">
+<span class="font-mono-sm text-[10px] text-outline leading-tight">ACTIVE TARGET</span>
+<span class="font-mono-md text-mono-md text-primary font-medium leading-none">FashionMNIST Classifier v1.4 [req_unl_9819]</span>
+</div>
+<span class="material-symbols-outlined text-[16px] text-outline ml-1">expand_more</span>
+</button>
+</div>
+<button class="flex items-center gap-1.5 px-space-md py-2 rounded-DEFAULT bg-surface-container-high border border-outline-variant/40 font-mono-md text-mono-md text-on-surface hover:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+<span>Export Evaluation Spec (JSON)</span>
+</button>
+<button class="flex items-center gap-1.5 px-space-md py-2 rounded-DEFAULT bg-primary text-on-primary font-mono-md text-mono-md font-semibold hover:bg-primary-fixed transition-colors active:scale-[0.99]" id="runVerificationBtn">
+<span class="material-symbols-outlined text-[16px]">play_arrow</span>
+<span>Run Verification Test</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-outline-variant/30 rounded-DEFAULT overflow-hidden border border-outline-variant/40">
+<div class="bg-surface-container p-space-md flex flex-col justify-between">
+<div class="flex items-center justify-between mb-1">
+<span class="font-mono-sm text-[10px] text-outline uppercase tracking-wider">Experiment Tag</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+</div>
+<div class="font-mono-md text-mono-md text-primary font-semibold">EXP-UNL-9819-VERIF</div>
+<div class="font-mono-sm text-[10px] text-on-surface-variant mt-1">Hessian-guided subgradient pruning</div>
+</div>
+<div class="bg-surface-container p-space-md flex flex-col justify-between">
+<div class="flex items-center justify-between mb-1">
+<span class="font-mono-sm text-[10px] text-outline uppercase tracking-wider">Target Unlearned Checkpoint</span>
+<span class="font-mono-sm text-[10px] text-outline">STEP 400</span>
+</div>
+<div class="font-mono-md text-mono-md text-primary truncate font-medium">chkpt_unlearned_step400.pt</div>
+<div class="flex items-center gap-1 font-mono-sm text-[11px] text-on-surface-variant mt-1">
+<span class="text-outline">Hash:</span>
+<span class="truncate">0x4d8a2fc190...9e10</span>
+<button class="hover:text-primary"><span class="material-symbols-outlined text-[12px]">content_copy</span></button>
+</div>
+</div>
+<div class="bg-surface-container p-space-md flex flex-col justify-between">
+<div class="flex items-center justify-between mb-1">
+<span class="font-mono-sm text-[10px] text-outline uppercase tracking-wider">Reference Baseline</span>
+<span class="font-mono-sm text-[10px] text-outline">EPOCH 30</span>
+</div>
+<div class="font-mono-md text-mono-md text-primary truncate font-medium">chkpt_retrained_scratch_epoch30.pt</div>
+<div class="flex items-center gap-1 font-mono-sm text-[11px] text-on-surface-variant mt-1">
+<span class="text-outline">Hash:</span>
+<span class="truncate">0xbc1184a7e2...65a2</span>
+<button class="hover:text-primary"><span class="material-symbols-outlined text-[12px]">content_copy</span></button>
+</div>
+</div>
+<div class="bg-surface-container p-space-md flex flex-col justify-between">
+<div class="flex items-center justify-between mb-1">
+<span class="font-mono-sm text-[10px] text-outline uppercase tracking-wider">Target Deleted Slice</span>
+<span class="px-1 py-0.5 rounded-DEFAULT bg-surface-container-high font-mono-sm text-[9px] text-outline">D_forget</span>
+</div>
+<div class="font-mono-md text-mono-md text-primary font-medium">Class 'Ankle boot' (Index 9)</div>
+<div class="font-mono-sm text-[11px] text-on-surface-variant mt-1 truncate">
+<span>#04921, #04922, #04923</span>
+<span class="text-outline">(48 samples total)</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">ssid_chart</span>
+<span class="font-headline-sm text-headline-sm text-primary">Empirical Forgetting Metrics</span>
+</div>
+<span class="font-mono-sm text-mono-sm text-outline">Convergence δ ≤ 0.05 Target</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="bg-surface-container border border-outline-variant/30 rounded-DEFAULT p-space-md flex flex-col justify-between hover:border-outline transition-colors">
+<div class="flex items-center justify-between text-outline font-mono-sm text-mono-sm">
+<span>TARGET SAMPLE LOSS</span>
+<span class="font-mono-sm text-[10px] text-outline">CE LOG-LOSS</span>
+</div>
+<div class="my-space-sm">
+<div class="flex items-baseline justify-between">
+<span class="font-display text-display text-primary tracking-tight">3.84</span>
+<span class="font-mono-sm text-mono-sm text-outline">scratch: 3.91</span>
+</div>
+<div class="w-full bg-surface-container-lowest h-1.5 rounded-DEFAULT mt-2 overflow-hidden flex">
+<div class="bg-outline-variant h-full" style="width: 3%"></div>
+<div class="bg-primary h-full" style="width: 95%"></div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2 border-t border-outline-variant/20 font-mono-sm text-[11px]">
+<span class="text-on-surface-variant">Original: 0.12</span>
+<span class="text-primary font-medium">Δ -0.07 vs Baseline [Close Match]</span>
+</div>
+</div>
+<div class="bg-surface-container border border-outline-variant/30 rounded-DEFAULT p-space-md flex flex-col justify-between hover:border-outline transition-colors">
+<div class="flex items-center justify-between text-outline font-mono-sm text-mono-sm">
+<span>MIA RISK SCORE</span>
+<span class="font-mono-sm text-[10px] text-outline">L-RATIO TEST</span>
+</div>
+<div class="my-space-sm">
+<div class="flex items-baseline justify-between">
+<span class="font-display text-display text-primary tracking-tight">48.6%</span>
+<span class="font-mono-sm text-mono-sm text-outline">random: 50.0%</span>
+</div>
+<div class="w-full bg-surface-container-lowest h-1.5 rounded-DEFAULT mt-2 relative">
+<div class="absolute left-1/2 top-0 bottom-0 w-0.5 bg-outline-variant z-10" title="50% Pure Guess"></div>
+<div class="bg-primary h-full rounded-DEFAULT" style="width: 48.6%"></div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2 border-t border-outline-variant/20 font-mono-sm text-[11px]">
+<span class="text-on-surface-variant">Original: 94.2%</span>
+<span class="px-1.5 py-0.2 rounded-DEFAULT bg-surface-container-high text-primary border border-outline-variant/40">Safe (Δ -1.4%)</span>
+</div>
+</div>
+<div class="bg-surface-container border border-outline-variant/30 rounded-DEFAULT p-space-md flex flex-col justify-between hover:border-outline transition-colors">
+<div class="flex items-center justify-between text-outline font-mono-sm text-mono-sm">
+<span>HOLDOUT ACCURACY</span>
+<span class="font-mono-sm text-[10px] text-outline">D_RETAIN</span>
+</div>
+<div class="my-space-sm">
+<div class="flex items-baseline justify-between">
+<span class="font-display text-display text-primary tracking-tight">91.4%</span>
+<span class="font-mono-sm text-mono-sm text-outline">pre-unl: 91.8%</span>
+</div>
+<div class="w-full bg-surface-container-lowest h-1.5 rounded-DEFAULT mt-2 overflow-hidden">
+<div class="bg-primary h-full" style="width: 91.4%"></div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2 border-t border-outline-variant/20 font-mono-sm text-[11px]">
+<span class="text-on-surface-variant">Retention: 99.5%</span>
+<span class="text-primary font-medium">Degradation: -0.4%</span>
+</div>
+</div>
+<div class="bg-surface-container border border-outline-variant/30 rounded-DEFAULT p-space-md flex flex-col justify-between hover:border-outline transition-colors">
+<div class="flex items-center justify-between text-outline font-mono-sm text-mono-sm">
+<span>WEIGHT DIVERGENCE</span>
+<span class="font-mono-sm text-[10px] text-outline">L2 SPHERICAL DIST</span>
+</div>
+<div class="my-space-sm">
+<div class="flex items-baseline justify-between">
+<span class="font-display text-display text-primary tracking-tight">0.042</span>
+<span class="font-mono-sm text-mono-sm text-outline">thresh: &lt;0.080</span>
+</div>
+<div class="w-full bg-surface-container-lowest h-1.5 rounded-DEFAULT mt-2 overflow-hidden">
+<div class="bg-primary h-full" style="width: 52.5%"></div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2 border-t border-outline-variant/20 font-mono-sm text-[11px]">
+<span class="text-on-surface-variant">Bound: [0.00, 0.08]</span>
+<span class="text-primary font-medium">Norm Clearance: +47.5%</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container border border-outline-variant/30 rounded-DEFAULT p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-2 border-b border-outline-variant/20">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary">stacked_line_chart</span>
+<span class="font-mono-md text-mono-md text-primary uppercase font-semibold">Distribution A: Empirical Membership Probability</span>
+</div>
+<div class="flex items-center gap-space-md font-mono-sm text-[10px]">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-0.5 bg-outline"></span>
+<span class="text-on-surface-variant">Retain Set P(x)</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-0.5 bg-primary"></span>
+<span class="text-primary font-medium">Forget Set P(x) (Post-Unlearn)</span>
+</div>
+</div>
+</div>
+<div class="w-full h-48 relative bg-surface-container-lowest border border-outline-variant/20 rounded-DEFAULT p-2 flex flex-col justify-end">
+<svg class="w-full h-full overflow-visible text-primary" preserveaspectratio="none" viewbox="0 0 500 160">
+<line stroke="currentColor" stroke-dasharray="2 2" stroke-opacity="0.08" x1="0" x2="500" y1="40" y2="40"></line>
+<line stroke="currentColor" stroke-dasharray="2 2" stroke-opacity="0.08" x1="0" x2="500" y1="80" y2="80"></line>
+<line stroke="currentColor" stroke-dasharray="2 2" stroke-opacity="0.08" x1="0" x2="500" y1="120" y2="120"></line>
+<line stroke="currentColor" stroke-dasharray="4 4" stroke-opacity="0.15" x1="250" x2="250" y1="0" y2="160"></line>
+<path d="M 40 155 C 140 155, 180 30, 250 25 C 320 30, 360 155, 460 155" fill="none" stroke="currentColor" stroke-dasharray="3 3" stroke-opacity="0.35" stroke-width="1.5"></path>
+<path d="M 45 155 C 145 155, 185 28, 252 26 C 318 28, 355 155, 455 155" fill="none" stroke="currentColor" stroke-width="2"></path>
+<path d="M 120 155 C 170 120, 200 50, 251 26 C 300 50, 330 120, 380 155 Z" fill="currentColor" fill-opacity="0.04"></path>
+<circle cx="248" cy="26" fill="currentColor" r="3"></circle>
+<circle cx="210" cy="72" fill="currentColor" fill-opacity="0.7" r="2"></circle>
+<circle cx="285" cy="65" fill="currentColor" fill-opacity="0.7" r="2"></circle>
+<circle cx="170" cy="130" fill="currentColor" fill-opacity="0.5" r="1.5"></circle>
+<circle cx="330" cy="128" fill="currentColor" fill-opacity="0.5" r="1.5"></circle>
+</svg>
+<div class="flex justify-between items-center px-2 pt-1 font-mono-sm text-[10px] text-outline border-t border-outline-variant/20">
+<span>0.0 (Unlikely Member)</span>
+<span class="text-primary">Decision Threshold = 0.50</span>
+<span>1.0 (Confident Training Sample)</span>
+</div>
+</div>
+<div class="flex items-start justify-between font-mono-sm text-[11px] text-on-surface-variant bg-surface-container-high/40 p-space-sm rounded-DEFAULT">
+<span>Kolmogorov-Smirnov Statistic D = 0.038</span>
+<span class="text-primary font-medium">Asymptotic p-value = 0.841 &gt; α (0.05)</span>
+<span class="text-outline">H0: Identical distributions (Retained)</span>
+</div>
+</div>
+<div class="bg-surface-container border border-outline-variant/30 rounded-DEFAULT p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-2 border-b border-outline-variant/20">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary">data_thresholding</span>
+<span class="font-mono-md text-mono-md text-primary uppercase font-semibold">Distribution B: Loss Trajectory &amp; Slice Confusion</span>
+</div>
+<span class="font-mono-sm text-[10px] text-outline">ITERATION STEPS 0 - 400</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div class="bg-surface-container-lowest border border-outline-variant/20 p-space-sm rounded-DEFAULT flex flex-col justify-between">
+<span class="font-mono-sm text-[10px] text-outline uppercase">Forget Loss Ascent Curve</span>
+<div class="w-full h-28 my-1 relative">
+<svg class="w-full h-full text-primary" preserveaspectratio="none" viewbox="0 0 240 90">
+<line stroke="currentColor" stroke-dasharray="2 2" stroke-opacity="0.3" stroke-width="1.5" x1="10" x2="230" y1="20" y2="20"></line>
+<text fill="currentColor" fill-opacity="0.4" font-family="JetBrains Mono" font-size="8" x="12" y="16">Scratch Ref Loss (3.91)</text>
+<path d="M 10 80 Q 50 78, 90 40 T 160 24 T 230 22" fill="none" stroke="currentColor" stroke-width="2"></path>
+<circle cx="230" cy="22" fill="currentColor" r="3"></circle>
+</svg>
+</div>
+<div class="flex justify-between font-mono-sm text-[10px] text-outline">
+<span>Step 0 (Loss 0.12)</span>
+<span class="text-primary font-medium">Final: 3.84</span>
+<span>Step 400</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant/20 p-space-sm rounded-DEFAULT flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-mono-sm text-[10px] text-outline uppercase">Class 9 Redistribution</span>
+<span class="font-mono-sm text-[10px] text-outline">48 Target Samples</span>
+</div>
+<div class="grid grid-cols-4 gap-1 my-1 font-mono-sm text-center">
+<div class="bg-surface-container p-1 rounded-DEFAULT border border-outline-variant/20">
+<span class="text-[9px] text-outline block">Boot (True)</span>
+<span class="text-[12px] text-primary font-semibold">2.1%</span>
+</div>
+<div class="bg-surface-container p-1 rounded-DEFAULT border border-outline-variant/20">
+<span class="text-[9px] text-outline block">Sneaker</span>
+<span class="text-[12px] text-on-surface">39.6%</span>
+</div>
+<div class="bg-surface-container p-1 rounded-DEFAULT border border-outline-variant/20">
+<span class="text-[9px] text-outline block">Sandal</span>
+<span class="text-[12px] text-on-surface">43.8%</span>
+</div>
+<div class="bg-surface-container p-1 rounded-DEFAULT border border-outline-variant/20">
+<span class="text-[9px] text-outline block">Other</span>
+<span class="text-[12px] text-on-surface">14.5%</span>
+</div>
+</div>
+<div class="font-mono-sm text-[10px] text-on-surface-variant flex items-center justify-between">
+<span>Target Class True Positives:</span>
+<span class="text-primary font-medium">1 / 48 (Expected Prior: ~10%)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary">verified_user</span>
+<span class="font-headline-sm text-headline-sm text-primary">Verification Verdict</span>
+</div>
+<span class="px-2 py-0.5 rounded-DEFAULT bg-surface-container-high border border-outline-variant/40 font-mono-sm text-mono-sm text-primary font-medium">STATE: ATTESTABLE</span>
+</div>
+<div class="bg-surface-container border-2 border-primary rounded-DEFAULT p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-DEFAULT bg-primary text-on-primary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary leading-tight font-bold">EVIDENCE CONSISTENT WITH UNLEARNING</span>
+<span class="font-mono-sm text-mono-sm text-outline">PROTOCOL ID: NULL-VERIF-IEEE-S&amp;P</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+          Empirical evaluation indicates target slice <span class="font-mono-sm text-primary font-semibold">[Class 9, Samples 48x]</span> exhibits loss distribution and Membership Inference Attack vulnerability statistically indistinguishable from a model retrained from scratch (p-value: <span class="font-mono-sm text-primary font-semibold">0.84 &gt; 0.05</span>).
+        </p>
+<div class="bg-surface-container-lowest border border-outline-variant/40 p-space-md rounded-DEFAULT flex gap-space-sm items-start">
+<span class="material-symbols-outlined text-outline text-[18px] mt-0.5">info</span>
+<div class="flex flex-col gap-1">
+<span class="font-mono-sm text-mono-sm text-primary font-medium uppercase tracking-wider">Verification Scope &amp; Boundary Notice</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant leading-snug">
+              This empirical test measures statistical discrepancy and MIA resistance. It guarantees computational indistinguishability under standard attack bounds, not an absolute mathematical zeroing of residual orthogonal vectors.
+            </span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container border border-outline-variant/30 rounded-DEFAULT p-space-md flex flex-col gap-space-sm">
+<span class="font-mono-sm text-mono-sm text-outline uppercase tracking-wider px-space-xs">EVALUATION PIPELINE TRACE</span>
+<div class="flex flex-col gap-1.5 font-mono-sm text-mono-sm">
+<div class="flex items-center justify-between p-space-sm bg-surface-container-lowest rounded-DEFAULT border border-outline-variant/20">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+<span class="text-on-surface">Step 1: Checkpoint Integrity Check</span>
+</div>
+<span class="text-outline text-[10px]">SHA-256 MATCH</span>
+</div>
+<div class="flex items-center justify-between p-space-sm bg-surface-container-lowest rounded-DEFAULT border border-outline-variant/20">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+<span class="text-on-surface">Step 2: Holdout Validation Evaluation</span>
+</div>
+<span class="text-outline text-[10px]">Δ &lt; 0.5% (PASSED)</span>
+</div>
+<div class="flex items-center justify-between p-space-sm bg-surface-container-lowest rounded-DEFAULT border border-outline-variant/20">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+<span class="text-on-surface">Step 3: MIA Vulnerability Test</span>
+</div>
+<span class="text-outline text-[10px]">ROC-AUC 0.504</span>
+</div>
+<div class="flex items-center justify-between p-space-sm bg-surface-container-lowest rounded-DEFAULT border border-outline-variant/20">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[16px]">check_circle</span>
+<span class="text-on-surface">Step 4: Influence Matrix Analysis</span>
+</div>
+<span class="text-outline text-[10px]">HESSIAN BOUND</span>
+</div>
+<div class="flex items-center justify-between p-space-sm bg-surface-container-high rounded-DEFAULT border border-outline-variant/40">
+<div class="flex items-center gap-2">
+<span class="w-3.5 h-3.5 border-2 border-t-primary border-outline-variant rounded-full animate-spin"></span>
+<span class="text-primary font-medium">Step 5: Ledger Attestation Commitment</span>
+</div>
+<span class="text-primary text-[10px] uppercase font-bold">READY TO SIGN</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container border border-outline-variant/30 rounded-DEFAULT p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between border-b border-outline-variant/20 pb-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary">link</span>
+<span class="font-mono-md text-mono-md text-primary uppercase font-semibold">Blockchain Attestation Ledger</span>
+</div>
+<span class="font-mono-sm text-[10px] text-outline">SOLIDITY EVM (31337)</span>
+</div>
+<div class="flex flex-col gap-space-sm font-mono-sm text-mono-sm">
+<div>
+<span class="text-outline text-[10px] uppercase block mb-0.5">Evaluation Report Hash (Blake2b-256)</span>
+<div class="p-2 bg-surface-container-lowest border border-outline-variant/30 rounded-DEFAULT break-all text-[11px] text-primary flex items-center justify-between">
+<span>0x7fa281c90d3e5a7b8e19c0032b4927f8a31e84d62198c0b534d0ef92318ab4</span>
+<button class="hover:text-primary ml-2"><span class="material-symbols-outlined text-[14px]">content_copy</span></button>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div>
+<span class="text-outline text-[10px] uppercase block mb-0.5">Smart Contract</span>
+<div class="p-1.5 bg-surface-container-lowest border border-outline-variant/20 rounded-DEFAULT truncate text-on-surface">
+                0x82f0A4...779b
+              </div>
+</div>
+<div>
+<span class="text-outline text-[10px] uppercase block mb-0.5">Gas Limit / Fee</span>
+<div class="p-1.5 bg-surface-container-lowest border border-outline-variant/20 rounded-DEFAULT text-on-surface">
+                ~124,190 gas ($0.02)
+              </div>
+</div>
+</div>
+<div class="bg-surface-container-lowest border border-outline-variant/20 rounded-DEFAULT p-2">
+<div class="flex items-center justify-between text-outline text-[10px] cursor-pointer" id="payloadToggle">
+<span class="uppercase">ABI Encoded Payload Preview</span>
+<span class="material-symbols-outlined text-[14px]" id="payloadIcon">expand_more</span>
+</div>
+<pre class="text-[10px] text-on-surface-variant font-mono-sm mt-1.5 overflow-x-auto p-1 bg-surface-container rounded-DEFAULT leading-tight hidden" id="payloadPreview">0x498e21a0000000000000000000000000000000000000000000000000000000000000265b7fa281c90d3e5a7b8e19c0032b4927f8a31e84d62198c0b534d0ef92318ab40000000000000000000000000000000000000000000000000000000000000001</pre>
+</div>
+</div>
+<button class="w-full flex items-center justify-center gap-2 py-2.5 rounded-DEFAULT bg-primary text-on-primary font-mono-md text-mono-md font-bold hover:bg-primary-fixed transition-colors active:scale-[0.99]" id="commitLedgerBtn">
+<span class="material-symbols-outlined text-[18px]">gavel</span>
+<span>Commit Verification to Ledger</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const payloadToggle = document.getElementById('payloadToggle');
+      const payloadPreview = document.getElementById('payloadPreview');
+      const payloadIcon = document.getElementById('payloadIcon');
+
+      if (payloadToggle && payloadPreview) {
+        payloadToggle.addEventListener('click', () => {
+          const isHidden = payloadPreview.classList.contains('hidden');
+          if (isHidden) {
+            payloadPreview.classList.remove('hidden');
+            payloadIcon.innerText = 'expand_less';
+          } else {
+            payloadPreview.classList.add('hidden');
+            payloadIcon.innerText = 'expand_more';
+          }
+        });
+      }
+
+      const runBtn = document.getElementById('runVerificationBtn');
+      if (runBtn) {
+        runBtn.addEventListener('click', () => {
+          const originalHTML = runBtn.innerHTML;
+          runBtn.innerHTML = `
+            <span class="w-4 h-4 border-2 border-t-on-primary border-surface-variant rounded-full animate-spin"></span>
+            <span>Evaluating Shards...</span>
+          `;
+          runBtn.disabled = true;
+          setTimeout(() => {
+            runBtn.innerHTML = originalHTML;
+            runBtn.disabled = false;
+          }, 1200);
+        });
+      }
+
+      const commitBtn = document.getElementById('commitLedgerBtn');
+      if (commitBtn) {
+        commitBtn.addEventListener('click', () => {
+          const originalHTML = commitBtn.innerHTML;
+          commitBtn.innerHTML = `
+            <span class="w-4 h-4 border-2 border-t-on-primary border-surface-variant rounded-full animate-spin"></span>
+            <span>Broadcasting Transaction...</span>
+          `;
+          commitBtn.disabled = true;
+          setTimeout(() => {
+            commitBtn.innerHTML = `
+              <span class="material-symbols-outlined text-[18px]">check</span>
+              <span>Committed (Block #19448102)</span>
+            `;
+            commitBtn.classList.remove('bg-primary', 'hover:bg-primary-fixed');
+            commitBtn.classList.add('bg-surface-container-high', 'text-primary', 'border', 'border-outline-variant/40');
+          }, 1500);
+        });
+      }
+    });
+  </script>
+</div></main></div></body></html>
